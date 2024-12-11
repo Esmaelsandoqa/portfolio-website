@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c; /* Dark blackish gray background */
+    color: #e0e0e0; /* Light gray text for better readability */
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+    background: linear-gradient(90deg, #2e2e2e, #3f3f3f);
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: #e0e0e0; /* Light gray text */
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    color: #ffffff; /* Bright white on hover */
+}
+
+/* Main Content */
+.main-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.profile-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #555; /* Subtle border for better visibility */
+}
+
+.intro {
+    flex: 1;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(90deg, #2e2e2e, #3f3f3f);
+    color: #e0e0e0;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Projects Page */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 2rem;
+}
+
+.project-card {
+    background: #2e2e2e; /* Dark gray background */
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 450px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    background-color: #3f3f3f; /* Slightly lighter gray on hover */
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+}
+
+.project-content {
+    padding: 20px;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffffff; /* White title for better contrast */
+}
+
+.project-description {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #d0d0d0; /* Light gray for description text */
+}
+
+.project-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #555555; /* Medium gray for links */
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.project-link:hover {
+    background-color: #777777; /* Lighter gray on hover */
+}
+
+/* Project Detail Page */
+.project-detail {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.project-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.project-images img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* New Additions for Consistency */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.project-card {
+    border: 1px solid #555; /* Border to match the color scheme */
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    background-color: #3f3f3f;
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-card .content {
+    padding: 1rem;
+}
+
+.project-card h2, 
+.project-card p {
+    color: #ffffff; /* White titles and paragraphs for better visibility */
+}
+/* General Reset */
+
+
+
+
+.section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+   
+}
+
+.section img {
+   max-width: 23%;
+    height: 300px;
+    border-radius: 10px;
+    margin: .5rem;
+}
+
+.section p,li {
+    text-align:left; ;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #dcdcdc;
+}
+
+.section img  {
+    transition: transform 0.5s ease;
+   
+}
+
+.section img:hover {
+    transform: scale(1.5); /* Zoom in 150% */
+}
+
+
